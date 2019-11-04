@@ -8,7 +8,7 @@ export const CredentialsList = (props) => (
         <Datagrid>
             <TextField label="ID" source="id" />
             <TextField label="Username" source="username" />
-            <BooleanField label="Active" valueLabelTrue=1 valueLabelFalse=0 source="active" />
+            <ChipField label="Active" source="active" />
         </Datagrid>
     </List>
 
