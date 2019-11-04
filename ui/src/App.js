@@ -9,7 +9,7 @@ import { CredentialsList } from './Credentials.js'
 
 const App = () => (
 
-  <Admin dataProvider={dataProvider}>
+  <Admin title="Box" dataProvider={dataProvider}>
     <Resource name="credentials" list={CredentialsList} />
   </Admin>
 )
