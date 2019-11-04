@@ -4,13 +4,13 @@ import './App.css';
 
 import { Admin, Resource } from 'react-admin'
 import dataProvider from './dataProvider.js'
-import { CredentialsList } from './Credentials.js'
+import { CredentialsListComponent, CredentialShowComponent, CredentialCreateComponent } from './Credentials.js'
 
 
 const App = () => (
 
   <Admin title="Box" dataProvider={dataProvider}>
-    <Resource name="credentials" list={CredentialsList} />
+    <Resource name="credentials" list={CredentialsListComponent} show={CredentialShowComponent} create={CredentialCreateComponent} />
   </Admin>
 )
 
