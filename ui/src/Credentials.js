@@ -1,5 +1,5 @@
 import React from 'react'
-import { List, Edit, Create, Datagrid, SimpleForm, TextField, BooleanField, NumberField, SelectField, ChipField, DisabledInput, TextInput, LongTextInput, NumberInput, BooleanInput, SelectInput, EditButton, Show, SimpleShowLayout } from 'react-admin'
+import { List, Edit, Create, Datagrid, SimpleForm, TextField, BooleanField, NumberField, SelectField, ChipField, DisabledInput, TextInput, LongTextInput, NumberInput, BooleanInput, SelectInput, EditButton, Show, SimpleShowLayout, ShowButton } from 'react-admin'
 
 
 export const CredentialsListComponent = (props) => (
@@ -9,6 +9,7 @@ export const CredentialsListComponent = (props) => (
             <TextField label="ID" source="id" />
             <TextField label="Username" source="username" />
             <ChipField label="Active" source="active" />
+            <ShowButton />
         </Datagrid>
     </List>
 
